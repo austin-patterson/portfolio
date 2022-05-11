@@ -1,7 +1,7 @@
 import './App.css'
 import { useRef } from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { Container, Image, Nav, Navbar } from 'react-bootstrap'
+import { Container, Image, Nav, Navbar, Row, Col } from 'react-bootstrap'
 import feetupURL from './laptop-feet-up.jpg'
 import constructionURL from './construction-landscape.jpg'
 
@@ -44,27 +44,31 @@ const App = () => {
   return (
     <div className="App">
       <Parallax pages={numPages}>
+        <ParallaxLayer sticky={{ end: numPages }}>
+          <StickyNav></StickyNav>
+        </ParallaxLayer>
+        
         {/* Home banner image */}
-        <ParallaxLayer offset={0} speed={0.8} className="p-layer">
+        <ParallaxLayer offset={0} speed={1} className="p-layer">
           <div className="imgContainer">
             <Image src={feetupURL} className="bannerImg"></Image>
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0} speed={0.2} className="p-layer">
-          <div className="homeTextContainer">
+        <ParallaxLayer offset={0} speed={0.3} className="p-layer">
+          <Container className='homeContainer'>
             {/* Name */}
-            <div className="name">
-              <span>Austin</span>
-              <span>Patterson</span>
-            </div>
+            <Row className="name display-1">
+              <span>Austin Patterson</span>
+            </Row>
 
             {/* Tagline */}
-            <div className="tagline">
-              A happy programmer
-            </div>
-          </div>
+            <Row className="tagline display-4">
+              <span>A happy programmer</span>
+            </Row>
+          </Container>
         </ParallaxLayer>
+
 
         {/* TODO: Project Card 1 */}
         <ParallaxLayer offset={1} speed={0.2} className="p-layer">
@@ -83,16 +87,15 @@ const App = () => {
 
         {/* TODO: Contact */}
         <ParallaxLayer offset={4} speed={0.3} className="p-layer">
-          <Image src={constructionURL} className="bannerImg"></Image>
+          <div className="imgContainer">
+            <Image src={constructionURL} className="bannerImg"></Image>
+          </div>
         </ParallaxLayer>
 
         <ParallaxLayer offset={4} speed={-0.05} className="p-layer">
           <h1>TODO - Contact Me</h1>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ end: numPages }}>
-          <StickyNav></StickyNav>
-        </ParallaxLayer>
       </Parallax>
     </div>
   )

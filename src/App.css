@@ -11,12 +11,14 @@
 }
 
 .App {
-  color: white;
+  color: #fff;
 }
 
 .imgContainer {
+  background-color: #000;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .bannerImg {
@@ -26,27 +28,30 @@
 }
 
 .homeTextContainer {
-  display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-around;
+}
+
+.homeContainer {
+  margin-top: 10%;
+  justify-content: space-around;
 }
 
 .name {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   font-size: 8rem;
-  font-weight: 700;
-  line-height: 90%;
-  letter-spacing: 0.1em;
+  font-weight: 700 !important;
+  justify-content: space-around;
+  letter-spacing: 0.1em !important;
+  line-height: 90% !important;
   margin-top: 1em;
-}
-
-.name .big {
-  font-size: 1.1em;
 }
 
 .tagline {
   font-size: 4rem;
-  text-align: end;
+  text-align: right;
+  margin-top: 1.5em !important;
+  width: 100%;
 }
