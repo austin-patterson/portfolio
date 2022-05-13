@@ -1,6 +1,27 @@
 .navLogo {
-  height: 1.5rem;
+  height: auto;
+  width: 1.5rem;
+}
+
+.navLogoParent {
+  margin: auto;
+  padding: 0 0.7rem !important;
+}
+
+.navBtn {
+  padding: 0.1 0.6em !important;
+}
+
+.navBtnImg {
+  height: 1em;
   width: auto;
+  color: #fff;
+}
+
+.navBtnImg:hover {
+  height: 1em;
+  width: auto;
+  color: #000;
 }
 
 .content {
@@ -12,7 +33,11 @@
 }
 
 .stickyNavLayer {
-  z-index: 2000;
+  z-index: 1500;
+}
+
+.stickyNavBar {
+  z-index: 1600;
 }
 
 .App {
@@ -30,6 +55,15 @@
   /* position: absolute; */
   height: 100vh;
   width: auto;
+}
+
+.scrollText {
+  font-weight: 600;
+  margin-top: 30%;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 .sectionHeader {
@@ -54,17 +88,19 @@
   flex-direction: column;
   font-size: 8rem;
   font-weight: 700 !important;
-  justify-content: space-around;
   letter-spacing: 0.1em !important;
   line-height: 90% !important;
-  margin-top: 1em;
 }
 
 .tagline {
   font-size: 4rem;
   text-align: right;
-  margin-top: 1.5em !important;
   width: 100%;
+}
+
+.resumeBtn {
+  padding: 0.5em 3em !important;
+  z-index: 1650;
 }
 
 /* Project Cards */
@@ -80,6 +116,7 @@
 .card {
   /* background-color: #0d408d !important; */
   margin: 2rem 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 .logo {
