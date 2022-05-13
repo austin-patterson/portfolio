@@ -1,5 +1,6 @@
-.spacer {
-  flex-grow: 1;
+.navLogo {
+  height: 1.5rem;
+  width: auto;
 }
 
 .content {

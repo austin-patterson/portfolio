@@ -1,9 +1,11 @@
 import './App.css'
 import { useRef, useState } from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { Image, Nav, Navbar, Container, Stack, Row, Col, Card, Button, Collapse } from 'react-bootstrap'
+import { Image, Nav, Navbar, Container, Stack, Row, Col, Card, Button, Collapse, NavDropdown } from 'react-bootstrap'
 import feetupURL from './laptop-feet-up.jpg'
-import constructionURL from './construction-landscape.jpg'
+import verticalLineURL from './vertical-line.svg'
+import githubLogoURL from './github-logo-light.png'
+import linkedinLogoURL from './linkedin-logo-light.png'
 import itsElectricURL from './drs-its-electric.png'
 import bloomwatchURL from './bloomwatch-dashboard.png'
 import ubuntuLogoURL from './ubuntu-logo.svg'
@@ -32,11 +34,21 @@ const App = () => {
           <Nav.Link onClick={() => ref.current.scrollTo(1)}>Projects</Nav.Link>
           <Nav.Link onClick={() => ref.current.scrollTo(3.5)}>Bio</Nav.Link>
           <Nav.Link onClick={() => ref.current.scrollTo(4)}>Contact</Nav.Link>
+          <Nav.Link>
+            <Image className="navLogo" src={verticalLineURL}></Image>
+          </Nav.Link>
+          <Nav.Link href="https://github.com/austin-patterson">
+            <Image className="navLogo" src={githubLogoURL}></Image>
+          </Nav.Link>
+          <Nav.Link href="https://www.linkedin.com/in/austin-g-patterson/">
+            <Image className="navLogo" src={linkedinLogoURL}></Image>
+          </Nav.Link>
         </Nav>
       </Navbar>
     )
   }
 
+  /**
   const ProjKiosk = () => {
     return (<>
       <Container>
@@ -71,6 +83,7 @@ const App = () => {
       </Container>
     </>)
   }
+  */
 
   const KioskCard = () => {
 
@@ -231,10 +244,12 @@ const App = () => {
         <ParallaxLayer offset={2} speed={0.25} factor={1.2} className="p-layer">
           <WebRefreshCard></WebRefreshCard>
         </ParallaxLayer>
-
+        
+        {/* 
         <ParallaxLayer offset={3} speed={0.25} factor={1.2} className="p-layer">
           <UpcycleCard></UpcycleCard>
         </ParallaxLayer>
+        */}
 
         {/* TODO: About */}
         <ParallaxLayer offset={3.3} speed={0.5} sticky={{ start: 3.3, end: 4 }}>
