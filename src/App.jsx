@@ -20,9 +20,9 @@ const App = () => {
       <Navbar variant="dark" bg="dark" className="justify-content-center">
         <Nav>
           <Nav.Link onClick={() => ref.current.scrollTo(0)}>Home</Nav.Link>
-          <Nav.Link onClick={() => ref.current.scrollTo(0)}>Projects</Nav.Link>
-          <Nav.Link onClick={() => ref.current.scrollTo(0)}>About</Nav.Link>
-          <Nav.Link onClick={() => ref.current.scrollTo(0)}>Contact</Nav.Link>
+          <Nav.Link onClick={() => ref.current.scrollTo(1)}>Projects</Nav.Link>
+          <Nav.Link onClick={() => ref.current.scrollTo(3)}>About</Nav.Link>
+          <Nav.Link onClick={() => ref.current.scrollTo(4)}>Contact</Nav.Link>
         </Nav>
       </Navbar>
     )
@@ -79,7 +79,7 @@ const App = () => {
           <Card.Subtitle><strong>Project Objective:</strong> Create a limited access operating system that opens a web app on startup</Card.Subtitle>
           <Card.Img src={itsElectricURL} className="mt-2"></Card.Img>
           <Card.Body>
-            <Card.Text>
+            <Card.Text as="div">
               <span>Constraints:</span>
               <ul>
                 <li>On startup, automatically logs into a user called <code>kiosk</code> and open a limited-functionality web browser targeting the web app</li>
@@ -117,7 +117,7 @@ const App = () => {
           <Card.Subtitle><strong>Project Objective:</strong> Iterate through dashboard designs using a modern frontend framework</Card.Subtitle>
           <Card.Img src={itsElectricURL} className="mt-2"></Card.Img>
           <Card.Body>
-            <Card.Text>
+            <Card.Text as="div">
               <span>Constraints:</span>
               <ul>
                 <li>On startup, automatically logs into a user called <code>kiosk</code> and open a limited-functionality web browser targeting the web app</li>
