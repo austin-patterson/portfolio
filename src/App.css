@@ -27,6 +27,12 @@
   width: auto;
 }
 
+.sectionHeader {
+  padding: 1em;
+}
+
+/* Home */
+
 .homeTextContainer {
   align-items: center;
   display: flex;
@@ -56,7 +62,22 @@
   width: 100%;
 }
 
+/* Project Cards */
+
+.projectContainer {
+  padding-top: 3rem;
+}
+
+.footerText {
+  margin: auto 0;
+}
+
 .card {
   /* background-color: #0d408d !important; */
   margin: 2rem 10%;
+}
+
+.logo {
+  height: 3em;
+  width: auto;
 }
