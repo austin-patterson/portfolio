@@ -22,6 +22,8 @@ import tailwindLogoURL from './tailwind-logo.svg'
 import bonfireLogoURL from './bonfire.png'
 import myWoodURL from './my-woodcrafts.jpg'
 import bikeURL from './bike.jpg'
+import snowyMplsURL from './snowy-mpls.jpg'
+import mountainURL from './pikes-peak-town.jpg'
 
 const App = () => {
   // Globals
@@ -37,7 +39,7 @@ const App = () => {
           <Nav.Link onClick={() => ref.current.scrollTo(0)}>Home</Nav.Link>
           <Nav.Link onClick={() => ref.current.scrollTo(1)}>Projects</Nav.Link>
           <Nav.Link onClick={() => ref.current.scrollTo(3.5)}>Bio</Nav.Link>
-          <Nav.Link onClick={() => ref.current.scrollTo(4.5)}>Contact</Nav.Link>
+          <Nav.Link onClick={() => ref.current.scrollTo(5)}>Contact</Nav.Link>
           <Nav.Link className="navLogoParent">
             <Image className="navLogo" src={verticalLineURL}></Image>
           </Nav.Link>
@@ -278,11 +280,11 @@ Resume
 
         {/* BIO */}
 
-        <ParallaxLayer offset={3.3} speed={0.5} sticky={{ start: 3.3, end: 3.8 }}>
+        <ParallaxLayer offset={3.3} speed={0.5} sticky={{ start: 3.3, end: 4.2 }}>
           <h1 className="display-1 sectionHeader">Bio</h1>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3.5} speed={0.2} sticky={{ start: 3.5, end: 3.8 }} className="p-layer">
+        <ParallaxLayer offset={3.5} speed={0.2} sticky={{ start: 3.5, end: 4.2 }} className="p-layer">
           <Container>
             <Row>
               <Col sm={bioTextColWidth}>
@@ -309,10 +311,68 @@ Resume
           </Container>
         </ParallaxLayer>
 
-        {/* TODO: Contact */}
+        <ParallaxLayer offset={4.2} speed={0.6} className="p-layer">
+          <Container>
+            <Row>
+              <Col sm={bioTextColWidth}>
+              </Col>
+              <Col>
+              </Col>
+            </Row>
+          </Container>
+        </ParallaxLayer>
 
-        <ParallaxLayer offset={4.5} speed={-0.05} className="p-layer">
-          <h1>TODO - Contact Me</h1>
+        <ParallaxLayer offset={4.2} speed={0.5} className="p-layer">
+          <Container>
+            <Row>
+              <Col sm={bioTextColWidth}>
+              </Col>
+              <Col>
+                <Image fluid src={snowyMplsURL} />
+              </Col>
+            </Row>
+          </Container>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={4.2} speed={0.6} className="p-layer">
+          <Container>
+            <Row>
+              <Col sm={bioTextColWidth}>
+                <Image fluid src={mountainURL} />
+              </Col>
+              <Col>
+              </Col>
+            </Row>
+          </Container>
+        </ParallaxLayer>
+
+
+        {/* CONTACT */}
+
+        <ParallaxLayer speed={1.5} sticky={{ start: 4.8 }}>
+          <h1 className="display-1 sectionHeader">Contact</h1>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={5.2} speed={1.5} className="p-layer">
+          <Container className="cushion">
+            <span className="display-6">Want to reach out?</span>
+          </Container>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={5.25} speed={2} className="p-layer">
+          <Container className="cushion">
+                <div className="t-right">
+                  <span className="display-6">I would love to hear from you!</span>
+                </div>
+          </Container>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={5.5} speed={4} className="p-layer">
+          <Container className="cushion">
+                <div className="text-center">
+                  <div className="display-5">Please contact me via LinkedIn or GitHub.</div>
+                </div>
+          </Container>
         </ParallaxLayer>
 
       </Parallax>

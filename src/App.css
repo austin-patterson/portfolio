@@ -123,3 +123,16 @@
   height: 3em;
   width: auto;
 }
+
+/* Contact */
+.cushion {
+  margin: 0 20%;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
+}
