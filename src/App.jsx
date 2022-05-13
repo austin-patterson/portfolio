@@ -290,9 +290,11 @@ Resume
           <Container>
             <Row>
               <Col sm={bioTextColWidth}>
-                <h1>Hi!</h1>
-                <p>Just a little bit about me. My ZIP codes go <code>80919, 55422, 80919, 55406, 75482, 55416, 55426, 53202, 53221</code> (exluding international of course). I moved around a bunch when I was younger but I consider myself from the Twin Cities. Right now, I'm finishing my degree at Milwaukee School of Engineering and I'm excited to enjoy a normal-ish summer in the City of Festivals!</p>
-                <p>When I'm not working on assignments or internship duties, I like to get outside, especially when the weather is nice. I like spending time with friends and discovering new places, preferably both at the same time. I love to bike. I love woodworking. It's my goal to own my own woodshop someday and retire to it. Until then, just gotta live the dream one day at a time.</p>
+                <div className="myCard shadow">
+                  <h1>Hi!</h1>
+                  <p>Just a little bit about me. My ZIP codes go <code>80919, 55422, 80919, 55406, 75482, 55416, 55426, 53202, 53221</code> (exluding international of course). I moved around a bunch when I was younger but I consider myself from the Twin Cities. Right now, I'm finishing my degree at Milwaukee School of Engineering and I'm excited to enjoy a normal-ish summer in the City of Festivals!</p>
+                  <p>When I'm not working on assignments or internship duties, I like to get outside, especially when the weather is nice. I like spending time with friends and discovering new places, preferably both at the same time. I love to bike. I love woodworking. It's my goal to own my own woodshop someday and retire to it. Until then, just gotta live the dream one day at a time.</p>
+                </div>
               </Col>
               <Col></Col>
             </Row>
@@ -305,7 +307,7 @@ Resume
               <Col sm={bioTextColWidth}></Col>
               <Col>
                 <Stack gap={5}>
-                  <Image fluid src={myWoodURL} className="shadow"/>
+                  <Image fluid src={myWoodURL} className="shadow" />
                   <Image fluid src={bikeURL} className="shadow" />
                   <Image fluid src={snowyMplsURL} className="shadow" />
                 </Stack>
@@ -314,7 +316,7 @@ Resume
           </Container>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.6} speed={0.2} className="p-layer">
+        <ParallaxLayer offset={4.6} speed={0.1} className="p-layer">
           <Container>
             <Row>
               <Col sm={bioTextColWidth}>
@@ -329,7 +331,7 @@ Resume
 
         {/* CONTACT */}
 
-        <ParallaxLayer speed={1.5} sticky={{ start: 5.3, end: 5.2 }}>
+        <ParallaxLayer speed={0.5} sticky={{ start: 5, end: 5.5 }}>
           <h1 className="display-1 sectionHeader">Contact</h1>
         </ParallaxLayer>
 
@@ -350,11 +352,12 @@ Resume
         <ParallaxLayer offset={5.5} speed={4} className="p-layer">
           <Container className="cushion">
             <div className="text-center">
-              <div className="display-5">Please contact me via LinkedIn or GitHub.</div>
+              <div className="display-5">
+                Please contact me via LinkedIn or GitHub.</div>
             </div>
           </Container>
         </ParallaxLayer>
-        
+
         {/* 
         <ParallaxLayer offset={6}>
           <Roshambo></Roshambo>
