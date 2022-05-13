@@ -8,9 +8,9 @@ import { Image, Nav, Navbar, Container, Stack, Row, Col, Card, Button } from 're
 import resumeURL from './Resume - Austin Patterson - 22spring.pdf'
 // Images
 import feetupURL from './laptop-feet-up.jpg'
-import verticalLineURL from './vertical-line.svg'
-import githubLogoURL from './github-logo-light.png'
-import linkedinLogoURL from './linkedin-logo-light.png'
+import verticalLineURL from './vertical-line-dark.svg'
+import githubLogoURL from './github-logo-dark.png'
+import linkedinLogoURL from './linkedin-logo-dark.png'
 import itsElectricURL from './drs-its-electric.png'
 import bloomwatchURL from './bloomwatch-dashboard.png'
 import ubuntuLogoURL from './ubuntu-logo.svg'
@@ -36,7 +36,7 @@ const App = () => {
   const StickyNav = () => {
 
     return (
-      <Navbar variant="dark" bg="dark" className="justify-content-center stickyNavBar">
+      <Navbar variant="light" bg="light" className="justify-content-center stickyNavBar">
         <Nav>
           <Nav.Link onClick={() => ref.current.scrollTo(0)}>Home</Nav.Link>
           <Nav.Link onClick={() => ref.current.scrollTo(1)}>Projects</Nav.Link>
@@ -55,7 +55,7 @@ const App = () => {
             <Image className="navLogo" src={verticalLineURL}></Image>
           </Nav.Link>
           <Nav.Link className="navLogoParent" href={resumeURL} target="_blank" rel="noopener noreferrer">
-            <Button variant="outline-light" className="navBtn shadow">
+            <Button variant="outline-dark" className="navBtn shadow">
               {/* download icon */}
               Download Resume
             </Button>
@@ -106,7 +106,7 @@ const App = () => {
 
     return (<>
       <Container className="projectContainer">
-        <Card bg="dark">
+        <Card bg="light">
           <Card.Title><strong className="h1">Limited Access Kiosk OS</strong></Card.Title>
           <Card.Subtitle><strong>Summary:</strong> Create a limited access operating system that opens a web app on startup</Card.Subtitle>
           <Card.Img src={itsElectricURL} className="mt-2"></Card.Img>
@@ -145,7 +145,7 @@ const App = () => {
 
     return (<>
       <Container className="projectContainer">
-        <Card bg="dark">
+        <Card bg="light">
           <Card.Title><strong className="h1">Dashboard Frontend Refresh</strong></Card.Title>
           <Card.Subtitle><strong>Project Objective:</strong> Demonstrate useful features and new designs for a power monitoring dashboard by iteratively prototyping using a modern frontend framework</Card.Subtitle>
           <Card.Img src={bloomwatchURL} className="mt-2"></Card.Img>
@@ -185,7 +185,7 @@ const App = () => {
 
     return (<>
       <Container className="projectContainer">
-        <Card bg="dark">
+        <Card bg="light">
           <Card.Title><strong className="h1">Upcycle Network</strong></Card.Title>
           <Card.Subtitle><strong>Project Objective:</strong> Continue development of the Upcycle web app to allow organizations to organize and track the sharing of resources</Card.Subtitle>
           {/* <Card.Img src={bloomwatchURL} className="mt-2"></Card.Img> */}
@@ -282,11 +282,11 @@ Resume
 
         {/* BIO */}
 
-        <ParallaxLayer speed={0.5} sticky={{ start: 3.6, end: 4.4 }}>
+        <ParallaxLayer speed={0.5} sticky={{ start: 3.2, end: 4.2 }}>
           <h1 className="display-1 sectionHeader">Bio</h1>
         </ParallaxLayer>
 
-        <ParallaxLayer speed={0.2} sticky={{ start: 3.8, end: 4.4 }} className="p-layer">
+        <ParallaxLayer speed={0.2} sticky={{ start: 3.3, end: 4.2 }} className="p-layer">
           <Container>
             <Row>
               <Col sm={bioTextColWidth}>
@@ -305,38 +305,16 @@ Resume
               <Col sm={bioTextColWidth}></Col>
               <Col>
                 <Stack gap={5}>
-                  <Image fluid src={myWoodURL} />
-                  <Image fluid src={bikeURL} />
+                  <Image fluid src={myWoodURL} className="shadow"/>
+                  <Image fluid src={bikeURL} className="shadow" />
+                  <Image fluid src={snowyMplsURL} className="shadow" />
                 </Stack>
               </Col>
             </Row>
           </Container>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3.9} speed={0.7} className="p-layer">
-          <Container>
-            <Row>
-              <Col sm={bioTextColWidth}>
-              </Col>
-              <Col>
-              </Col>
-            </Row>
-          </Container>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={4.3} speed={0.6} className="p-layer">
-          <Container>
-            <Row>
-              <Col sm={bioTextColWidth}>
-              </Col>
-              <Col>
-                <Image fluid src={snowyMplsURL} />
-              </Col>
-            </Row>
-          </Container>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={4.3} speed={0.2} className="p-layer">
+        <ParallaxLayer offset={4.6} speed={0.2} className="p-layer">
           <Container>
             <Row>
               <Col sm={bioTextColWidth}>
@@ -351,7 +329,7 @@ Resume
 
         {/* CONTACT */}
 
-        <ParallaxLayer speed={1.5} sticky={{ start: 4.8, end: 5.2 }}>
+        <ParallaxLayer speed={1.5} sticky={{ start: 5.3, end: 5.2 }}>
           <h1 className="display-1 sectionHeader">Contact</h1>
         </ParallaxLayer>
 
