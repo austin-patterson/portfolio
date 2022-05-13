@@ -1,6 +1,6 @@
 import './App.css'
 import './roshambo.css'
-import Roshambo from './Roshambo'
+// import Roshambo from './Roshambo'
 import { useRef } from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { Image, Nav, Navbar, Container, Stack, Row, Col, Card, Button } from 'react-bootstrap'
@@ -282,11 +282,11 @@ Resume
 
         {/* BIO */}
 
-        <ParallaxLayer offset={3.3} speed={0.5} sticky={{ start: 3.3, end: 4.2 }}>
+        <ParallaxLayer speed={0.5} sticky={{ start: 3.6, end: 4.4 }}>
           <h1 className="display-1 sectionHeader">Bio</h1>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3.5} speed={0.2} sticky={{ start: 3.5, end: 4.2 }} className="p-layer">
+        <ParallaxLayer speed={0.2} sticky={{ start: 3.8, end: 4.4 }} className="p-layer">
           <Container>
             <Row>
               <Col sm={bioTextColWidth}>
@@ -299,7 +299,7 @@ Resume
           </Container>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3.6} speed={0.7} className="p-layer">
+        <ParallaxLayer offset={3.6} speed={0.6} className="p-layer">
           <Container>
             <Row>
               <Col sm={bioTextColWidth}></Col>
@@ -313,7 +313,7 @@ Resume
           </Container>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.2} speed={0.6} className="p-layer">
+        <ParallaxLayer offset={3.9} speed={0.7} className="p-layer">
           <Container>
             <Row>
               <Col sm={bioTextColWidth}>
@@ -324,7 +324,7 @@ Resume
           </Container>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.2} speed={0.5} className="p-layer">
+        <ParallaxLayer offset={4.3} speed={0.6} className="p-layer">
           <Container>
             <Row>
               <Col sm={bioTextColWidth}>
@@ -336,7 +336,7 @@ Resume
           </Container>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.2} speed={0.6} className="p-layer">
+        <ParallaxLayer offset={4.3} speed={0.2} className="p-layer">
           <Container>
             <Row>
               <Col sm={bioTextColWidth}>
