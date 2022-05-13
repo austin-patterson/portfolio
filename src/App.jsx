@@ -32,6 +32,15 @@ const App = () => {
   //   )
   // }
 
+  const ProjUpcycle = () => {
+
+    return (
+      <>
+        <p></p>
+      </>
+    )
+  }
+
   const ProjectCard = () => {
 
 
@@ -47,7 +56,7 @@ const App = () => {
         <ParallaxLayer sticky={{ end: numPages }}>
           <StickyNav></StickyNav>
         </ParallaxLayer>
-        
+
         {/* Home banner image */}
         <ParallaxLayer offset={0} speed={1} className="p-layer">
           <div className="imgContainer">
@@ -64,7 +73,7 @@ const App = () => {
 
             {/* Tagline */}
             <Row className="tagline display-4">
-              <span>A happy programmer</span>
+              <code>A happy programmer</code>
             </Row>
           </Container>
         </ParallaxLayer>
