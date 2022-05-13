@@ -55,3 +55,8 @@
   margin-top: 1.5em !important;
   width: 100%;
 }
+
+.card {
+  /* background-color: #0d408d !important; */
+  margin: 2rem 10%;
+}
