@@ -1,4 +1,6 @@
 import './App.css'
+import './roshambo.css'
+import Roshambo from './Roshambo'
 import { useRef } from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { Image, Nav, Navbar, Container, Stack, Row, Col, Card, Button } from 'react-bootstrap'
@@ -38,7 +40,7 @@ const App = () => {
         <Nav>
           <Nav.Link onClick={() => ref.current.scrollTo(0)}>Home</Nav.Link>
           <Nav.Link onClick={() => ref.current.scrollTo(1)}>Projects</Nav.Link>
-          <Nav.Link onClick={() => ref.current.scrollTo(3.5)}>Bio</Nav.Link>
+          <Nav.Link onClick={() => ref.current.scrollTo(3.35)}>Bio</Nav.Link>
           <Nav.Link onClick={() => ref.current.scrollTo(5)}>Contact</Nav.Link>
           <Nav.Link className="navLogoParent">
             <Image className="navLogo" src={verticalLineURL}></Image>
@@ -178,7 +180,7 @@ const App = () => {
     </>)
   }
 
-  // TODO
+  // TODO - flesh out and find a picture
   const UpcycleCard = () => {
 
     return (<>
@@ -289,7 +291,7 @@ Resume
             <Row>
               <Col sm={bioTextColWidth}>
                 <h1>Hi!</h1>
-                <p>Just a little bit about me. My ZIP codes go ..., (exluding international of course). I moved around a bunch when I was younger but I consider myself from the Twin Cities. Right now, I'm finishing my degree at Milwaukee School of Engineering and I'm excited to enjoy a normal-ish summer in the City of Festivals!</p>
+                <p>Just a little bit about me. My ZIP codes go <code>80919, 55422, 80919, 55406, 75482, 55416, 55426, 53202, 53221</code> (exluding international of course). I moved around a bunch when I was younger but I consider myself from the Twin Cities. Right now, I'm finishing my degree at Milwaukee School of Engineering and I'm excited to enjoy a normal-ish summer in the City of Festivals!</p>
                 <p>When I'm not working on assignments or internship duties, I like to get outside, especially when the weather is nice. I like spending time with friends and discovering new places, preferably both at the same time. I love to bike. I love woodworking. It's my goal to own my own woodshop someday and retire to it. Until then, just gotta live the dream one day at a time.</p>
               </Col>
               <Col></Col>
@@ -349,7 +351,7 @@ Resume
 
         {/* CONTACT */}
 
-        <ParallaxLayer speed={1.5} sticky={{ start: 4.8 }}>
+        <ParallaxLayer speed={1.5} sticky={{ start: 4.8, end: 5.2 }}>
           <h1 className="display-1 sectionHeader">Contact</h1>
         </ParallaxLayer>
 
@@ -361,19 +363,25 @@ Resume
 
         <ParallaxLayer offset={5.25} speed={2} className="p-layer">
           <Container className="cushion">
-                <div className="t-right">
-                  <span className="display-6">I would love to hear from you!</span>
-                </div>
+            <div className="t-right">
+              <span className="display-6">I would love to hear from you!</span>
+            </div>
           </Container>
         </ParallaxLayer>
 
         <ParallaxLayer offset={5.5} speed={4} className="p-layer">
           <Container className="cushion">
-                <div className="text-center">
-                  <div className="display-5">Please contact me via LinkedIn or GitHub.</div>
-                </div>
+            <div className="text-center">
+              <div className="display-5">Please contact me via LinkedIn or GitHub.</div>
+            </div>
           </Container>
         </ParallaxLayer>
+        
+        {/* 
+        <ParallaxLayer offset={6}>
+          <Roshambo></Roshambo>
+        </ParallaxLayer>
+        */}
 
       </Parallax>
     </div>
