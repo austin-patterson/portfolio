@@ -26,7 +26,7 @@
   margin-top: 3.5rem;
 }
 
-.p-layer {
+.p-nav {
   padding-top: 56px;
 }
 
@@ -61,6 +61,10 @@
   color: #f8f9fa;
 }
 
+.homeImg .scrollText {
+  margin-top: 20vh;
+}
+
 .shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -72,14 +76,20 @@
 /* Home */
 
 .homeTextContainer {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
+  height: 100%;
 }
 
-.homeContainer {
-  margin-top: 10%;
-  justify-content: space-around;
+.homeTextContainer * {
+  padding-top: 5vh;
+}
+
+.homeImg {
+  background-image: url('./laptop-feet-up.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-position: center center;
+  background-size: cover;
+  height: calc(100vh - 56px);
 }
 
 .name {
@@ -158,4 +168,21 @@
   border: 3px solid #f8f9fa;
   padding: 10px;
   border-radius: 15px;
+}
+
+.padTop {
+  padding-top: 5vh;
+}
+
+.padXtra {
+  padding: 10vh 0 30vh;
+}
+
+.carousel-item img {
+  max-height: 80vh;
+  width: auto;
+}
+
+.carousel {
+  height: 80vh;
 }
