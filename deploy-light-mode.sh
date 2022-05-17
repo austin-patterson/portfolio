@@ -23,6 +23,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:austin-patterson/austin-patterson.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:austin-patterson/austin-patterson.git light-mode:gh-pages
+git push -f git@github.com:austin-patterson/austin-patterson.github.io.git light-mode:gh-pages
 
 cd -
