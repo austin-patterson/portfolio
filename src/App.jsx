@@ -393,7 +393,7 @@ Resume
                   href={resumeURL}
                   target="_blank" rel="noopener noreferrer"
                 >
-                  Resume
+                  Download Resume
                 </Button>
               </Col>
               <Col sm={4}></Col>
