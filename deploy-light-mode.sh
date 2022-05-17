@@ -20,9 +20,9 @@ git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:austin-patterson/austin-patterson.github.io.git main
+git push -f git@github.com:austin-patterson/austin-patterson.github.io.git light-mode
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:austin-patterson/austin-patterson.github.io.git light-mode:gh-pages
+# git push -f git@github.com:austin-patterson/austin-patterson.github.io.git light-mode:gh-pages
 
 cd -
