@@ -285,7 +285,7 @@ Resume
                 <Col sm={bioTextColWidth}>
                   <div className="myCard shadow">
                     <h1>Hi!</h1>
-                    <p>Just a little bit about me. My ZIP codes go <code>80919, 55422, 80919, 55406, 75482, 55416, 55426, 53202, 53221</code> (exluding international of course). I moved around a bunch when I was younger but I consider myself from the Twin Cities. Right now, I'm finishing my degree at Milwaukee School of Engineering and I'm excited to enjoy a normal-ish summer in the City of Festivals!</p>
+                    <p>Just a little bit about me. My ZIP codes go <code>80919, 55422, 80919, 55406, 75482, 55416, 55426, 53202, 53221, 53212</code> (exluding international of course). I moved around a bunch when I was younger but I consider myself from the Twin Cities. Right now, I'm finishing my degree at Milwaukee School of Engineering and I'm excited to enjoy a normal-ish summer in the City of Festivals!</p>
                     <p>When I'm not working on assignments or internship duties, I like to get outside, especially when the weather is nice. I like spending time with friends and discovering new places, preferably both at the same time. I love to bike. I love woodworking. It's my goal to own my own woodshop someday and retire to it. Until then, just gotta live the dream one day at a time.</p>
                   </div>
                 </Col>
