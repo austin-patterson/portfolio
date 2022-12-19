@@ -471,11 +471,11 @@ Resume
   }
 
   const doParallax = () => {
-    const MIN_WIDTH_PARALLAX = 1080
-    const MIN_HEIGHT_PARALLAX = 600
+    const MIN_WIDTH_PARALLAX = 900
+    const MAX_WIDTH_PARALLAX = 1200
     const useMediaQuery = (q) => (window.matchMedia(q))
     
-    const res = useMediaQuery(`(min-width: ${MIN_WIDTH_PARALLAX})`).matches && useMediaQuery(`(min-height: ${MAX_WIDTH_PARALLAX})`).matches
+    const res = useMediaQuery(`(min-width: ${MIN_WIDTH_PARALLAX})`).matches && useMediaQuery(`(max-width: ${MAX_WIDTH_PARALLAX})`).matches
     console.log('doParallax =', res)
     
     return res
@@ -483,7 +483,8 @@ Resume
 
   /** PAGE CONTENT */
 
-  return doParallax() ? <ParallaxApp /> : <NoParallaxApp />
+  // Disable Parallax because the library relies on animating frames, which is NOT responsive.
+  // return doParallax() ? <ParallaxApp /> : <NoParallaxApp />
 }
 
 export default App
